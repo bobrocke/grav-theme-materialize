@@ -1,0 +1,189 @@
+h4 {
+	font-size: 1.75rem;
+}
+
+a:hover {
+	color: #ee6e73;
+}
+
+a.btn {
+	vertical-align: top;
+	&:hover {
+		color: black;
+	}
+}
+
+.tags a {
+	display: inline-block;
+	padding: 0;
+	margin-bottom: .2rem;
+	:hover {
+		color: black;
+	}
+}
+
+//Bug fix for Materialize v0.95.3
+.navbar-fixed nav {
+	overflow: visible;
+}
+
+.nav-wrapper a {
+	&:hover {
+		color: black;
+	}
+}
+
+li.disabled {
+	color: rgba(50, 50, 50, 0.2);
+}
+
+.tags a {
+	display: inline-block;
+	padding: 0;
+	margin-bottom: .2rem;
+	:hover {
+		color: black;
+	}
+}
+
+span {
+	.badge {
+		float: none;
+		padding: 4px 6px 4px 6px;
+	}
+}
+
+span.badge.new::after {
+	content: "";
+}
+
+.footer-copyright .container a {
+	color: black;
+	&:hover {
+		color: white;
+	}
+}
+
+.header {
+	background-color: #ee6e73;
+	text-align: center;
+	h1 {
+		margin-top: 0;
+		margin-bottom: 0;
+		text-align: center;
+		font-size: 4rem;
+		padding-top: 3rem;
+		color: #FFFFFF;
+	}
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+		text-align: center;
+		font-size: 2rem;
+		padding-bottom: 2rem;
+		color: #FFFFFF;
+	}
+}
+
+.breadcrumbs {
+	margin-top: 1.5rem;
+	a {
+		vertical-align: top;
+	}
+}
+
+.list-blog-date {
+	float: right;
+	text-align: center;
+	span {
+		display: block;
+		font-size: 1.75rem;
+		font-weight: 400;
+		line-height: 110%;
+	}
+	em {
+		display: block;
+		border-top: 1px solid #ee6e73;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+}
+
+.list-blog-header {
+	position: relative;
+	h4 {
+		margin-bottom: 0.5rem;
+	}
+
+	img {
+		display: block;
+		margin-top: 1rem;
+		border-radius: 0.25rem;
+	}
+}
+
+.pagination {
+	text-align: center;
+	display: inline-block;
+}
+
+.previous {
+	float: right;
+}
+
+.modular .features,
+.modular .callout {
+	margin-top: 3rem;
+	h2 {
+		margin-bottom: 0;
+		font-weight: 500;
+		font-size: 1.75rem;
+		line-height: 2rem;
+	}
+	h3 {
+		margin-top: 0;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+	}
+	h4 {
+		font-size: 1.5rem;
+	}
+}
+
+.modular .callout h2 {
+	margin-top: 0;
+}
+
+.modular .feature-items {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.features.big .feature {
+	width: 50%;
+	float: left;
+}
+
+.features.small .feature {
+	width: 25%;
+	float: left;
+	h4 {
+		font-size: 1.125rem;
+	}
+}
+
+.callout {
+	background: #F0F0F0;
+	padding: 2rem 2rem;
+	.align-right {
+		float: right;
+		margin-left: 1rem;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	.container {
+		width: 90%;
+	}
+}

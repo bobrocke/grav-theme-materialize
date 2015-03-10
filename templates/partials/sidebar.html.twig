@@ -1,0 +1,48 @@
+{% if config.plugins.simplesearch.enabled %}
+	<div class="sidebar-content">
+		<h4>SimpleSearch</h4>
+		{% include 'partials/simplesearch_searchbox.html.twig' %}
+	</div>
+{% endif %}
+
+{% if config.plugins.relatedpages.enabled and related_pages|length > 0 %}
+	<h4>Related Posts</h4>
+	{% include 'partials/relatedpages.html.twig' %}
+{% endif %}
+
+{% if config.plugins.random.enabled %}
+	<div class="sidebar-content">
+		<h4>Random Article</h4>
+		<a class="btn waves-effect waves-light" href="{{ base_url_relative }}/random"><i class="mdi-av-repeat"></i> I'm Feeling Lucky!</a>
+	</div>
+{% endif %}
+
+<div class="sidebar-content">
+	<h4>Some Text Widget</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+</div>
+
+{% if config.plugins.taxonomylist.enabled %}
+	<div class="sidebar-content">
+		<h4>Popular Tags</h4>
+		{% include 'partials/taxonomylist.html.twig' with {'taxonomy':'tag'} %}
+	</div>
+{% endif %}
+
+{% if config.plugins.archives.enabled %}
+	<div class="sidebar-content">
+		{% set archives_show_count = false %}
+		<h4>Archives</h4>
+		{% include 'partials/archives.html.twig' %}
+	</div>
+{% endif %}
+
+{% if config.plugins.feed.enabled %}
+	<div class="sidebar-content">
+		<h4>Syndicate</h4>
+		<div>
+			<a class="btn" href="{{ feed_url }}.atom">Atom 1.0</a>
+			<a class="btn" href="{{ feed_url }}.rss">RSS</a>
+		</div>
+	</div>
+{% endif %}

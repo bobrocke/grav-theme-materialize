@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block head %}
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		{% include 'partials/metadata.html.twig' %}
+
+		<title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+		<link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
+		{% block stylesheets %}
+			{% do assets.add('theme://css-compiled/theme.css',98) %}
+		{% endblock %}
+		{{ assets.css() }}
+
+		{% block javascripts %}
+			{% do assets.add('jquery', 101) %}
+		{% endblock %}
+		{{ assets.js() }}
+
+		{% endblock head%}
+	</head>
+
+	<body class="{% block body_classes %}{{ page.header.body_classes }}{% endblock %}">
+		{% block header_navigation %}
+			{% include 'partials/navigation.html.twig' %}
+		{% endblock %}
+
+		{% block content %}{% endblock %}
+		{% block pagination %}{% endblock %}
+
+		<footer class="page-footer">
+			<div class="footer-copyright">
+				<div class="container">
+					Materialize Theme for <a href="http://getgrav.org">Grav</a>
+				</div>
+			</div>
+		</footer>
+		{% block bottom %}
+		<script>
+			$(document).ready(function () {
+				$(".button-collapse").sideNav({
+						closeOnClick: true
+					}
+				);
+			})
+		</script>
+		{% endblock %}
+	</body>
+</html>

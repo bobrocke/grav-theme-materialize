@@ -1,0 +1,50 @@
+{% embed 'partials/base.html.twig' %}
+	{% set collection = page.collection() %}
+	{% set base_url = page.url %}
+	{% set feed_url = base_url %}
+
+	{% if base_url == '/' %}
+		{% set base_url = '' %}
+	{% endif %}
+
+	{% if base_url == base_url_relative %}
+		{% set feed_url = base_url~'/'~page.slug %}
+	{% endif %}
+
+	{% block content %}
+		<div class="header">
+			<div class="container">
+				{{ page.content }}
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m8 l8 blog-main">
+				{% if config.plugins.breadcrumbs.enabled %}
+					{% include 'partials/breadcrumbs.html.twig' %}
+				{% endif %}
+
+				{% for child in collection %}
+					{% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
+				{% endfor %}
+				</div>
+
+				<div class="col s0 m4 l4 blog-sidebar">
+					{% include 'partials/sidebar.html.twig' %}
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+
+	{% block pagination %}
+		{% if config.plugins.pagination.enabled and collection.params.pagination %}
+			<div class="container">
+				<div class="row center-align">
+					<div class="col s12 m8 l8">
+						{% include 'partials/pagination.html.twig' with {'pagination':collection.params.pagination} %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	{% endblock %}
+{% endembed %}

@@ -1,0 +1,20 @@
+name: Materialize
+version: 1.0.0
+description: "The Materialize theme is built using the popular **Materialize** Framework"
+icon: bold
+author:
+  name: Robert J. Rockefeller
+  email: bob@bobrockefeller.com
+  url: http://www.bobrockefeller.com
+homepage: https://github.com/bobrocke/grav-theme-materialize
+demo:
+keywords: materialize, theme, framework
+bugs: https://github.com/bobrocke/grav-theme-materialize/issues
+license: MIT
+
+dependencies:
+  - materializer
+
+form:
+  validation: strict
+  fields:

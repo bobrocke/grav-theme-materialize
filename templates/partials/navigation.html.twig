@@ -1,0 +1,28 @@
+<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper container">
+			<a class="brand-logo" href="{{ base_url == '' ? '/' : base_url }}">Grav</a>
+
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="mdi-navigation-menu"></i>
+			</a>
+
+			<ul class="right hide-on-med-and-down">
+				{% for page in pages.children.visible %}
+					{% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+					<li class="{{ current_page }}">
+						<a href="{{ page.url }}">{{ page.menu|title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+
+			<ul id="mobile-demo" class="side-nav">
+				{% for page in pages.children.visible %}
+					<li>
+						<a href="{{ page.url }}">{{ page.menu|title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</nav>
+</div>
