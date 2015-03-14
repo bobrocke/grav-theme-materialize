@@ -1,6 +1,6 @@
 # Materialize
 
-![Materialize](assets/readme_1.png)
+![Materialize](screenshot.jpg)
 
 Materialize is a [Grav](http://github.com/getgrav/grav) theme that is based on the [Materialize framework](http://materializecss.com).
 
