@@ -1,13 +1,31 @@
+$localLightPrimaryColor: #B3E5FC;
+$localPrimaryColor: #03A9F4;
+$localDarkPrimaryColor: #0288D1;
+$localAccentColor: #FF5722;
+
+$darkPrimaryColor: #0288D1;
+$primaryColor: #03A9F4;
+$lightPrimaryColor: #B3E5FC;
+$textPrimaryColor: #FFFFFF;
+$accentColor: #FF5722;
+$primaryTextColor: #212121;
+$secondaryTextColor: #727272;
+$dividerColor: #B6B6B6;
+
+
 h4 {
 	font-size: 1.75rem;
 }
 
-a:hover {
-	color: #ee6e73;
+a {
+	color: $localAccentColor;
+	&:hover {
+		color: $localPrimaryColor;
+	}
 }
 
 a.btn {
-	vertical-align: top;
+	vertical-align: middle;
 	&:hover {
 		color: black;
 	}
@@ -22,9 +40,22 @@ a.btn {
 	}
 }
 
+.logo {
+	margin-top: 6px;
+	height: 52px;
+	width: 52px;
+	path {
+		fill: white;
+	}
+}
+
 //Bug fix for Materialize v0.95.3
 .navbar-fixed nav {
 	overflow: visible;
+}
+
+nav {
+	background-color: $localDarkPrimaryColor;
 }
 
 .nav-wrapper a {
@@ -47,6 +78,9 @@ li.disabled {
 }
 
 span {
+	&.tags {
+		float: right;
+	}
 	.badge {
 		float: none;
 		padding: 4px 6px 4px 6px;
@@ -58,14 +92,14 @@ span.badge.new::after {
 }
 
 .footer-copyright .container a {
-	color: black;
+	font-weight: 500;
 	&:hover {
 		color: white;
 	}
 }
 
 .header {
-	background-color: #ee6e73;
+	background-color: $localPrimaryColor;
 	text-align: center;
 	h1 {
 		margin-top: 0;
@@ -92,21 +126,26 @@ span.badge.new::after {
 	}
 }
 
-.list-blog-date {
-	float: right;
-	text-align: center;
-	span {
-		display: block;
-		font-size: 1.75rem;
-		font-weight: 400;
-		line-height: 110%;
+.btn {
+	padding-top: 0.1rem;
+	background-color: $localPrimaryColor;
+	&:hover {
+		background-color: $localLightPrimaryColor;
 	}
-	em {
-		display: block;
-		border-top: 1px solid #ee6e73;
-		font-style: normal;
-		text-transform: uppercase;
-	}
+}
+
+.btn span {
+	position: relative;
+	top: -0.15rem;
+}
+
+.btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
+	font-size: 1.3rem;
+	line-height: inherit;
+}
+
+span.badge.new {
+	background-color: $localPrimaryColor;
 }
 
 .list-blog-header {
@@ -119,12 +158,16 @@ span.badge.new::after {
 		display: block;
 		margin-top: 1rem;
 		border-radius: 0.25rem;
+		clear: both;
 	}
 }
 
 .pagination {
 	text-align: center;
 	display: inline-block;
+	li.active {
+		background-color: $localAccentColor;
+	}
 }
 
 .previous {
@@ -151,25 +194,55 @@ span.badge.new::after {
 }
 
 .modular .callout h2 {
-	margin-top: 0;
+	margin-top: 0.5em;
 }
 
-.modular .feature-items {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+.modular .features .feature {
+	//float: left;
+	vertical-align: top;
+}
+
+.features.big .feature-content {
+	padding-right: 2rem;
+	&.push {
+		margin-left: 4rem;
+	}
 }
 
 .features.big .feature {
-	width: 50%;
-	float: left;
+	margin: 2rem 0;
+	h4 {
+		text-align: left;
+		margin: 0;
+	}
+	i {
+		float: left;
+		font-size: 3rem;
+		color: $localAccentColor;
+	}
 }
 
 .features.small .feature {
-	width: 25%;
-	float: left;
+	margin-top: 2rem;
 	h4 {
 		font-size: 1.125rem;
+	}
+	i {
+		font-size: 3rem;
+		color: $localAccentColor;
+	}
+}
+
+.features.small .feature-content {
+	h4 {
+		margin-top: 0;
+	}
+}
+
+.feature-content {
+	p {
+		text-align: left;
+		margin: 0;
 	}
 }
 
@@ -182,8 +255,24 @@ span.badge.new::after {
 	}
 }
 
+footer.page-footer {
+	background-color: $localPrimaryColor;
+}
+
+.centered {
+	display: block;
+	margin: 0 auto;
+}
+
 @media only screen and (min-width: 993px) {
 	.container {
 		width: 90%;
 	}
 }
+
+@media only screen and (max-width: 992px) {
+	.logo {
+		margin-top: 18px;
+	}
+}
+

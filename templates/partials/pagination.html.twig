@@ -3,9 +3,9 @@
 	<ul class="pagination">
 		{% if pagination.hasPrev %}
 			<li class="waves-effect"><a href="{{ base_url }}{{ pagination.params }}{{ pagination.prevUrl }}"><i
-						class="mdi-navigation-chevron-left"></i></a></li>
+						class="mdi mdi-chevron-left"></i></a></li>
 		{% else %}
-			<li class="disabled"><i class="mdi-navigation-chevron-left"></i></li>
+			<li class="disabled"><i class="mdi mdi-chevron-left"></i></li>
 		{% endif %}
 
 		{% for paginate in pagination %}
@@ -20,9 +20,9 @@
 
 		{% if pagination.hasNext %}
 			<li class="waves-effect"><a href="{{ base_url }}{{ pagination.params }}{{ pagination.nextUrl }}"><i
-						class="mdi-navigation-chevron-right"></i></a></li>
+						class="mdi mdi-chevron-right"></i></a></li>
 		{% else %}
-			<li class="disabled"><i class="mdi-navigation-chevron-right"></i></li>
+			<li class="disabled"><i class="mdi mdi-chevron-right"></i></li>
 		{% endif %}
 	</ul>
 

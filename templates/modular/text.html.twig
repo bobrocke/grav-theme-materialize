@@ -1,10 +1,18 @@
-<div class="modular-row callout">
-	<div class="container">
+<div class="modular-row callout container">
+	<div class="row">
 		{% set image = page.media.images|first %}
 		{% if image %}
-			{{ image.cropResize(400,400).html('','align-'~page.header.image_align) }}
+			<div class="col s12 l6">
+				{{ image.cropResize(400,400).html('Screenshot', 'centered responsive-img') }}
+			</div>
+			<div class="col s12 l6">
+				{{ content }}
+			</div>
+		{% else %}
+			<div class="col s12">
+				{{ content }}
+			</div>
 		{% endif %}
-		{{ content }}
 	</div>
 
 	<div style="clear:both"></div>

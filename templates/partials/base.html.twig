@@ -13,6 +13,7 @@
 		<link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
 		{% block stylesheets %}
 			{% do assets.add('theme://css-compiled/theme.css',98) %}
+			{% do assets.addCss('theme://css/custom.css',100) %}
 		{% endblock %}
 		{{ assets.css() }}
 
