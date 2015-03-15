@@ -36,6 +36,14 @@
 						<a href="{{ page.url }}">{{ page.menu|title }}</a>
 					</li>
 				{% endfor %}
+				{% for mitem in site.menu %}
+					<li>
+						<a href="{{ mitem.url }}">
+							{% if mitem.icon %}<i class="mdi mdi-{{ mitem.icon }}"></i>{% endif %}
+							<span>{{ mitem.text }}</span>
+						</a>
+					</li>
+				{% endfor %}
 			</ul>
 
 			<ul id="mobile-demo" class="side-nav">
