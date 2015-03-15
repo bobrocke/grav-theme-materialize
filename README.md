@@ -66,3 +66,18 @@ If you want to set Materialize as the default theme, you can do so by following 
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
 
 Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **materialize** folder.
+
+It is possible to add top level menu items via entries in `site,yaml` in this form:
+
+```
+menu:
+  - text: Item 1
+    url: http://
+    icon: icon-name
+
+  - text: Item 2
+    url: http://
+    icon: icon-name
+```
+
+The text and url fields are mandatory if the menu structure is used. The icon field is optional, but if present, refers to an icon in the [Design Icon Font](http://materialdesignicons.com).
