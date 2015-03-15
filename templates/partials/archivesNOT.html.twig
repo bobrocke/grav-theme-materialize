@@ -1,8 +1,0 @@
-<ul class="collection">
-	{% set month = "now"|date("m/d/Y") %}
-
-	{% for j in range(1, 12) %}
-		{% set month = month|date_modify('-1 month') %}
-		<a class="collection-item" href="{{ base_url }}/month:{{ month|date('M_Y')|lower|e('url') }}">{{ month|date('F Y') }}</a>
-	{% endfor %}
-</ul>

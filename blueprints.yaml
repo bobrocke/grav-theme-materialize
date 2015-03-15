@@ -1,9 +1,9 @@
 name: Materialize
-version: 1.0.0
+version: 1.1.2
 description: "The Materialize theme is built using the popular **Materialize** Framework"
 icon: google
 author:
-  name: Robert J. Rockefeller
+  name: Bob Rockefeller
   email: bob@bobrockefeller.com
   url: http://www.bobrockefeller.com
 homepage: https://github.com/bobrocke/grav-theme-materialize
