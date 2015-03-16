@@ -40,7 +40,7 @@
 					<li>
 						<a href="{{ mitem.url }}">
 							{% if mitem.icon %}<i class="mdi mdi-{{ mitem.icon }}"></i>{% endif %}
-							<span>{{ mitem.text }}</span>
+							{% if mitem.text %}<span>{{ mitem.text }}</span>{% endif %}
 						</a>
 					</li>
 				{% endfor %}
@@ -50,6 +50,14 @@
 				{% for page in pages.children.visible %}
 					<li>
 						<a href="{{ page.url }}">{{ page.menu|title }}</a>
+					</li>
+				{% endfor %}
+				{% for mitem in site.menu %}
+					<li>
+						<a href="{{ mitem.url }}">
+							{% if mitem.icon %}<i class="mdi mdi-{{ mitem.icon }}"></i>{% endif %}
+							{% if mitem.text %}<span>{{ mitem.text }}</span>{% endif %}
+						</a>
 					</li>
 				{% endfor %}
 			</ul>

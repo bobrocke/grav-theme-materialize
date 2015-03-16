@@ -29,3 +29,10 @@
 
 1. [](#new)
   * Added custom top level menu items configured in site.yaml
+
+# v1.2.1
+## 03/16/2015
+
+1. [](#bugfix)
+  * The mobile hamburger menu wasn't showing menus configured in YAML.
+  * Correct the readme - menu text is not a required field
