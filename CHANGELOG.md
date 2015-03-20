@@ -42,3 +42,9 @@
 
 1. [](#bugfix)
   * Custom menus configured in YAML without icons were vertically mis-aligned.
+
+# v1.2.3
+## 03/20/2015
+
+1. [](#bugfix)
+  * Prev/Next blog post buttons were missing their icons.
