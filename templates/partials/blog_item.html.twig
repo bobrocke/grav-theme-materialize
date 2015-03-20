@@ -52,16 +52,16 @@
 		{% if show_prev_next %}
 			<p>
 				{% if not page.isFirst %}
-					<a class="btn waves-effect waves-light" href="{{ page.nextSibling.url }}"><i class="mdi-navigation-chevron-left"></i>Next Post</a>
+					<a class="btn waves-effect waves-light" href="{{ page.nextSibling.url }}"><i class="mdi mdi-chevron-left"></i><span>Next Post</span></a>
 				{% else %}
-					<a class="btn disabled"><i class="mdi-navigation-chevron-left"></i>Next
-						Post</a>
+					<a class="btn disabled"><i class="mdi mdi-chevron-left"></i><span>Next
+						Post</span></a>
 				{% endif %}
 
 				{% if not page.isLast %}
-					<a class="btn previous waves-effect waves-light" href="{{ page.prevSibling.url }}">Previous Post<i class="mdi-navigation-chevron-right"></i></a>
+					<a class="btn previous waves-effect waves-light" href="{{ page.prevSibling.url }}"><span>Previous Post</span><i class="mdi mdi-chevron-right"></i></a>
 				{% else %}
-					<a class="btn previous disabled">Previous Post<i class="mdi-navigation-chevron-right"></i></a>
+					<a class="btn previous disabled"><span>Previous Post</span><i class="mdi mdi-chevron-right"></i></a>
 				{% endif %}
 			</p>
 		{% endif %}
