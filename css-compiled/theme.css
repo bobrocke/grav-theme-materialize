@@ -96,11 +96,7 @@ span.badge.new::after {
 
 .btn span {
   position: relative;
-  top: -0.15rem; }
-
-.btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
-  font-size: 1.3rem;
-  line-height: inherit; }
+  top: -0.1rem; }
 
 span.badge.new {
   background-color: #03A9F4; }
@@ -124,22 +120,18 @@ span.badge.new {
 .previous {
   float: right; }
 
-.modular .features,
-.modular .callout {
+.modular .features, .modular .callout {
   margin-top: 3rem; }
-  .modular .features h2,
-  .modular .callout h2 {
+  .modular .features h2, .modular .callout h2 {
     margin-bottom: 0;
     font-weight: 500;
     font-size: 1.75rem;
     line-height: 2rem; }
-  .modular .features h3,
-  .modular .callout h3 {
+  .modular .features h3, .modular .callout h3 {
     margin-top: 0;
     font-size: 1.5rem;
     line-height: 1.75rem; }
-  .modular .features h4,
-  .modular .callout h4 {
+  .modular .features h4, .modular .callout h4 {
     font-size: 1.5rem; }
 
 .modular .callout h2 {
@@ -195,14 +187,15 @@ footer.page-footer {
 @media only screen and (min-width: 993px) {
   .container {
     width: 90%; } }
+
 @media only screen and (max-width: 992px) {
   .logo {
     margin-top: 18px; } }
+
 /*@media only screen and (min-width: 601px) {
 	nav a, nav a i {
 		height: 64px;
 		line-height: 64px;
 	}
 }*/
-
 /*# sourceMappingURL=theme.css.map */
