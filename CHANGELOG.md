@@ -48,3 +48,9 @@
 
 1. [](#bugfix)
   * Prev/Next blog post buttons were missing their icons.
+
+# v1.2.4
+## 03/21/2015
+
+1. [](#improved)
+  * Changed the icon on link post titles.
