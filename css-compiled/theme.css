@@ -41,6 +41,9 @@ nav {
   position: relative;
   top: -0.15em; }
 
+nav .nav-wrapper .mdi {
+  display: inline-block; }
+
 li.disabled {
   color: rgba(50, 50, 50, 0.2); }
 
@@ -55,6 +58,8 @@ span.tags {
   float: right; }
 span .badge {
   float: none;
+  position: relative;
+  right: 0;
   padding: 4px 6px 4px 6px; }
 
 span.badge.new::after {
@@ -90,7 +95,8 @@ span.badge.new::after {
 
 .btn {
   padding-top: 0.1rem;
-  background-color: #03A9F4; }
+  background-color: #03A9F4;
+  margin-bottom: 1rem; }
   .btn:hover {
     background-color: #B3E5FC; }
 
