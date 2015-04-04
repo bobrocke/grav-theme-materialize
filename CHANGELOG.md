@@ -1,6 +1,11 @@
+#v1.3.0
+##
+1. [](#improved)
+  * Changes to accommodate MaterializeCSS v0.96.0
+
 #v1.2.5
 ##
-1. [](#bugfix
+1. [](#bugfix)
   * Rearranged and repaired the format of this changelog
 
 
