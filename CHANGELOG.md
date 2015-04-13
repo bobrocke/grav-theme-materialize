@@ -1,10 +1,15 @@
 #v1.3.0
-##
+## 04/13/15
+1. [](#bigfix)
+  * Fix the image width overflow problem
+
+#v1.3.0
+## 04/05/15
 1. [](#improved)
   * Changes to accommodate MaterializeCSS v0.96.0
 
 #v1.2.5
-##
+## 03/25/15
 1. [](#bugfix)
   * Rearranged and repaired the format of this changelog
 

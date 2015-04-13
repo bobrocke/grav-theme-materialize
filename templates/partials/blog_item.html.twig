@@ -26,9 +26,9 @@
 		{% endif %}
 
 		{% if big_header %}
-			{{ page.media.images|first.cropResize(900,600).html('', 'responsive-img blog-header-image') }}
+			{{ page.media.images|first.cropResize(900,600).html('', '', 'responsive-img blog-header-image') }}
 		{% else %}
-			{{ page.media.images|first.cropZoom(900,300).html('','responsive-img blog-header-image') }}
+			{{ page.media.images|first.cropZoom(900,300).html('', '', 'responsive-img blog-header-image') }}
 		{% endif %}
 	</div>
 
