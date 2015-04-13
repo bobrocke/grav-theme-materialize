@@ -1,6 +1,11 @@
-#v1.3.0
+#v1.3.2
+## 
+1. [](#improvement)
+  * Turned off title case for Menus
+
+#v1.3.1
 ## 04/13/15
-1. [](#bigfix)
+1. [](#bugfix)
   * Fix the image width overflow problem
 
 #v1.3.0

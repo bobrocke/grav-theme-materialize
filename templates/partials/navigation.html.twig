@@ -33,7 +33,7 @@
 				{% for page in pages.children.visible %}
 					{% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
 					<li class="{{ current_page }}">
-						<a href="{{ page.url }}">{{ page.menu|title }}</a>
+						<a href="{{ page.url }}">{{ page.menu }}</a>
 					</li>
 				{% endfor %}
 				{% for mitem in site.menu %}
@@ -53,7 +53,7 @@
 			<ul id="mobile-demo" class="side-nav">
 				{% for page in pages.children.visible %}
 					<li>
-						<a href="{{ page.url }}">{{ page.menu|title }}</a>
+						<a href="{{ page.url }}">{{ page.menu }}</a>
 					</li>
 				{% endfor %}
 				{% for mitem in site.menu %}
