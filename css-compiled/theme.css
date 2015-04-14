@@ -25,9 +25,6 @@ a.btn {
   .logo path {
     fill: white; }
 
-.navbar-fixed nav {
-  overflow: visible; }
-
 nav {
   background-color: #0288D1; }
 
@@ -40,6 +37,9 @@ nav {
 .nav-wrapper a span {
   position: relative;
   top: -0.15em; }
+
+a.button-collapse i.mdi.mdi-menu {
+  font-size: 2.5em; }
 
 nav .nav-wrapper .mdi {
   display: inline-block; }
@@ -193,10 +193,6 @@ footer.page-footer {
 @media only screen and (min-width: 993px) {
   .container {
     width: 90%; } }
-
-@media only screen and (max-width: 992px) {
-  .logo {
-    margin-top: 18px; } }
 
 /*@media only screen and (min-width: 601px) {
 	nav a, nav a i {

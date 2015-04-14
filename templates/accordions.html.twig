@@ -1,0 +1,39 @@
+{% embed 'partials/base.html.twig' %}
+	{% set base_url = page.url %}
+	{% set feed_url = base_url %}
+
+	{% if base_url == '/' %}
+		{% set base_url = '' %}
+	{% endif %}
+
+	{% if base_url == base_url_relative %}
+		{% set feed_url = base_url~'/'~page.slug %}
+	{% endif %}
+
+	{% block content %}
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m8 l8 blog-main">
+					<ul class="collapsible popout" data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header"><i class="mdi-image-filter-drama"></i>First</div>
+							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="mdi-maps-place"></i>Second</div>
+							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div>
+							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col s0 m4 l4 blog-sidebar">
+					{% include 'partials/sidebar.html.twig' %}
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+{% endembed %}

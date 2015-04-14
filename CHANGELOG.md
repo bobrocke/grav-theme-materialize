@@ -1,6 +1,16 @@
-#v1.3.0
+#v1.3.2
+## 04/14/15
+1. [](#improvement)
+  * Turned off title case for Menus
+  * Added a page to demo accordions
+
+2. [](#bugfix)
+  * Removed top margin from brand icon in narrow view
+  * Increased hamburger icon size in narrow view
+
+#v1.3.1
 ## 04/13/15
-1. [](#bigfix)
+1. [](#bugfix)
   * Fix the image width overflow problem
 
 #v1.3.0
