@@ -50,9 +50,9 @@ a.btn {
 }
 
 //Bug fix for Materialize v0.95.3
-.navbar-fixed nav {
-	overflow: visible;
-}
+//.navbar-fixed nav {
+//	overflow: visible;
+//}
 
 nav {
 	background-color: $localDarkPrimaryColor;
@@ -71,6 +71,10 @@ nav {
 		position: relative;
 		top: -0.15em;
 	}
+}
+
+a.button-collapse i.mdi.mdi-menu {
+	font-size: 2.5em;
 }
 
 nav .nav-wrapper .mdi {
@@ -281,11 +285,11 @@ footer.page-footer {
 	}
 }
 
-@media only screen and (max-width: 992px) {
-	.logo {
-		margin-top: 18px;
-	}
-}
+//@media only screen and (max-width: 992px) {
+//	.logo {
+//		margin-top: 18px;
+//	}
+//}
 
 /*@media only screen and (min-width: 601px) {
 	nav a, nav a i {
