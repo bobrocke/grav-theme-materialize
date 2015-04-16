@@ -285,15 +285,12 @@ footer.page-footer {
 	}
 }
 
-//@media only screen and (max-width: 992px) {
-//	.logo {
-//		margin-top: 18px;
-//	}
-//}
+.collapsible-header {
+	//display: inline-table;
+}
 
-/*@media only screen and (min-width: 601px) {
-	nav a, nav a i {
-		height: 64px;
-		line-height: 64px;
+.collapsible-body {
+	ul {
+		padding-left: 2em;
 	}
-}*/
+}
