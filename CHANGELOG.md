@@ -1,8 +1,9 @@
 # 1.3.3
-## 04/16/2015
+## 04/17/2015
 1. [](#improved)
   * Aligned lists within accordion panels with the paragraph text
   * Allowed long title text in accordion headers to wrap
+
 
 # 1.3.2
 ## 04/13/2015

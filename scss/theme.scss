@@ -286,11 +286,39 @@ footer.page-footer {
 }
 
 .collapsible-header {
-	//display: inline-table;
+	height: auto;
+	h1, h2, h3, h4, h5, h6 {
+		display: table-cell;
+		vertical-align: top;
+		margin: 0;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+	i {
+		width: auto;
+		line-height: inherit;
+		font-size: inherit;
+		margin-right: 0.5em;
+	}
 }
 
 .collapsible-body {
+	p:first-child {
+		padding-top: 1.5em;
+	}
+	p:last-child {
+		padding-bottom: 1.5em;
+	}
+	p {
+		padding: 0 2em 1em 2em;
+	}
+	ul:first-child {
+		padding-top: 1.5em;
+	}
+	ul:last-child {
+		padding-bottom: 1.5em;
+	}
 	ul {
-		padding-left: 2em;
+		padding: 0 2em 1em 2em;
 	}
 }
