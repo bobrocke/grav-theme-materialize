@@ -25,9 +25,6 @@ a.btn {
   .logo path {
     fill: white; }
 
-.navbar-fixed nav {
-  overflow: visible; }
-
 nav {
   background-color: #0288D1; }
 
@@ -40,6 +37,12 @@ nav {
 .nav-wrapper a span {
   position: relative;
   top: -0.15em; }
+
+a.button-collapse i.mdi.mdi-menu {
+  font-size: 2.5em; }
+
+nav .nav-wrapper .mdi {
+  display: inline-block; }
 
 li.disabled {
   color: rgba(50, 50, 50, 0.2); }
@@ -55,6 +58,8 @@ span.tags {
   float: right; }
 span .badge {
   float: none;
+  position: relative;
+  right: 0;
   padding: 4px 6px 4px 6px; }
 
 span.badge.new::after {
@@ -90,7 +95,8 @@ span.badge.new::after {
 
 .btn {
   padding-top: 0.1rem;
-  background-color: #03A9F4; }
+  background-color: #03A9F4;
+  margin-bottom: 1rem; }
   .btn:hover {
     background-color: #B3E5FC; }
 
@@ -188,14 +194,30 @@ footer.page-footer {
   .container {
     width: 90%; } }
 
-@media only screen and (max-width: 992px) {
-  .logo {
-    margin-top: 18px; } }
+.collapsible-header {
+  height: auto; }
+  .collapsible-header h1, .collapsible-header h2, .collapsible-header h3, .collapsible-header h4, .collapsible-header h5, .collapsible-header h6 {
+    display: table-cell;
+    vertical-align: top;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+  .collapsible-header i {
+    width: auto;
+    line-height: inherit;
+    font-size: inherit;
+    margin-right: 0.5em; }
 
-/*@media only screen and (min-width: 601px) {
-	nav a, nav a i {
-		height: 64px;
-		line-height: 64px;
-	}
-}*/
+.collapsible-body p:first-child {
+  padding-top: 1.5em; }
+.collapsible-body p:last-child {
+  padding-bottom: 1.5em; }
+.collapsible-body p {
+  padding: 0 2em 1em 2em; }
+.collapsible-body ul:first-child {
+  padding-top: 1.5em; }
+.collapsible-body ul:last-child {
+  padding-bottom: 1.5em; }
+.collapsible-body ul {
+  padding: 0 2em 1em 2em; }
 /*# sourceMappingURL=theme.css.map */
