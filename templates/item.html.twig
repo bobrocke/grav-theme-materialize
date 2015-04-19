@@ -13,7 +13,7 @@
 	{% block content %}
 		<div class="container">
 			<div class="row">
-				<div class="col s8 blog-main">
+				<div class="col s12 m8 l8 blog-main">
 					{% if config.plugins.breadcrumbs.enabled %}
 						{% include 'partials/breadcrumbs.html.twig' %}
 					{% endif %}
@@ -21,7 +21,7 @@
 					{% include 'partials/blog_item.html.twig' with {'truncate':false,'big_header':true} %}
 				</div>
 
-				<div class="col s4 blog-sidebar">
+				<div class="col s0 m4 l4 blog-sidebar">
 					{% include 'partials/sidebar.html.twig' %}
 				</div>
 			</div>

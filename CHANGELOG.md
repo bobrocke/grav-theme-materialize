@@ -1,3 +1,9 @@
+# 1.3.4
+## 04/19/2015
+1. [](#bugfix)
+  * Blog posts on narrow viewports did not move the sidebar to the bottom
+
+
 # 1.3.3
 ## 04/17/2015
 1. [](#improved)
