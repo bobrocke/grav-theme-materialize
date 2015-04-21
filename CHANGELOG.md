@@ -6,6 +6,7 @@
 
 # 1.3.3
 ## 04/17/2015
+
 1. [](#improved)
   * Aligned lists within accordion panels with the paragraph text
   * Allowed long title text in accordion headers to wrap
@@ -13,6 +14,7 @@
 
 # 1.3.2
 ## 04/13/2015
+
 1. [](#improved)
   * Turned off title case for Menus
 2. [](#bugfix)
@@ -22,42 +24,49 @@
 
 # 1.3.1
 ## 04/13/2015
+
 1. [](#bugfix)
   * Fix the image width overflow problem
 
 
 # 1.3.0
 ## 04/05/2015
+
 1. [](#improved)
   * Changes to accommodate MaterializeCSS v0.96.0
 
 
 # 1.2.5
 ## 03/25/2015
+
 1. [](#bugfix)
   * Rearranged and repaired the format of this changelog
 
 
 # 1.2.4
 ## 03/21/2015
+
 1. [](#improved)
   * Changed the icon on link post titles.
 
 
 # 1.2.3
 ## 03/20/2015
+
 1. [](#bugfix)
   * Prev/Next blog post buttons were missing their icons.
 
 
 # 1.2.2
 ## 03/16/2015
+
 1. [](#bugfix)
   * Custom menus configured in YAML without icons were vertically mis-aligned.
 
 
 # 1.2.1
 ## 03/16/2015
+
 1. [](#bugfix)
   * The mobile hamburger menu wasn't showing menus configured in YAML.
   * Correct the readme: menu text is not a required field
@@ -65,18 +74,21 @@
 
 # 1.2.0
 ## 03/15/2015
+
 1. [](#new)
   * Added custom top level menu items configured in site.yaml
 
 
 # 1.1.1 and 1.1.2
 ## 03/14/2015
+
 1. [](#bugfix)
   * Cleaned up the changelog and blueprints files
 
 
 # 1.1.0
 ## 03/14/2015
+
 1. [](#new)
   * Replaced the icon font
   * Replaced the brand text Grav with the Grav logo
@@ -89,5 +101,6 @@
 
 # 1.0.0
 ## 02/28/2015
+
 1. [](#new)
   * Initial Release

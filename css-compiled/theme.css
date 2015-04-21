@@ -1,5 +1,47 @@
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  margin: 2.5rem 0 0 0; }
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  margin: 2.5rem 0 0 0; }
+
+h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 2rem 0 0 0; }
+
 h4 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  line-height: 2.63rem;
+  margin: 1.75rem 0 0 0; }
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin: 1.5rem 0 0 0; }
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 1.88rem;
+  margin: 1.25rem 0 0 0; }
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: 0; }
+
+h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul {
+  margin-top: 0; }
+
+h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
+  margin-top: 0; }
+
+p, ul, ol, pre, code {
+  margin-bottom: 0; }
+
+ul {
+  margin-left: 1.5rem; }
 
 a {
   color: #FF5722; }
