@@ -350,6 +350,12 @@ footer.page-footer {
 }
 
 .collapsible-body {
+	h1, h2, h3, h4, h5, h5, h6 {
+		padding-left: 2rem;
+	}
+	iframe, img {
+		padding-left: 2rem;
+	}
 	p:first-child {
 		padding-top: 1.5em;
 	}
@@ -357,7 +363,7 @@ footer.page-footer {
 		padding-bottom: 1.5em;
 	}
 	p {
-		padding: 0 2em 1em 2em;
+		padding: 0 2rem 1em 2em;
 	}
 	ul:first-child {
 		padding-top: 1.5em;
@@ -365,7 +371,7 @@ footer.page-footer {
 	ul:last-child {
 		padding-bottom: 1.5em;
 	}
-	ul {
-		padding: 0 2em 1em 2em;
+	ul, ol {
+		padding: 0 2rem 1em 2em;
 	}
 }

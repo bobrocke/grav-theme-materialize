@@ -250,16 +250,20 @@ footer.page-footer {
     font-size: inherit;
     margin-right: 0.5em; }
 
+.collapsible-body h1, .collapsible-body h2, .collapsible-body h3, .collapsible-body h4, .collapsible-body h5, .collapsible-body h5, .collapsible-body h6 {
+  padding-left: 2rem; }
+.collapsible-body iframe, .collapsible-body img {
+  padding-left: 2rem; }
 .collapsible-body p:first-child {
   padding-top: 1.5em; }
 .collapsible-body p:last-child {
   padding-bottom: 1.5em; }
 .collapsible-body p {
-  padding: 0 2em 1em 2em; }
+  padding: 0 2rem 1em 2em; }
 .collapsible-body ul:first-child {
   padding-top: 1.5em; }
 .collapsible-body ul:last-child {
   padding-bottom: 1.5em; }
-.collapsible-body ul {
-  padding: 0 2em 1em 2em; }
+.collapsible-body ul, .collapsible-body ol {
+  padding: 0 2rem 1em 2em; }
 /*# sourceMappingURL=theme.css.map */
