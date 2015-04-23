@@ -48,10 +48,8 @@ a {
   a:hover {
     color: #03A9F4; }
 
-a.btn {
-  vertical-align: middle; }
-  a.btn:hover {
-    color: black; }
+a.btn:hover {
+  color: black; }
 
 .tags a {
   display: inline-block;
@@ -136,18 +134,20 @@ span.badge.new::after {
     vertical-align: top; }
 
 .btn {
-  padding-top: 0.1rem;
   background-color: #03A9F4;
   margin-bottom: 1rem; }
   .btn:hover {
     background-color: #B3E5FC; }
 
-.btn span {
-  position: relative;
-  top: -0.1rem; }
+i.left {
+  margin-right: 0.5rem; }
+
+i.right {
+  margin-left: 0.5rem; }
 
 span.badge.new {
-  background-color: #03A9F4; }
+  background-color: #03A9F4;
+  letter-spacing: 1px; }
 
 .list-blog-header {
   position: relative; }
