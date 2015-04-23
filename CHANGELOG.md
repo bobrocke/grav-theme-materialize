@@ -1,11 +1,12 @@
 # 1.3.4
-## 04/22/2015
+## 04/23/2015
 
 1. [](#bugfix)
   * Blog posts on narrow viewports did not move the sidebar to the bottom
+  * Fixed icon spacing in buttons (required a change in markup)
 2. [](#improved)
   * Better indentation for the contents of accordion panes
-  * More constant treatment of top and bottom margins for typographic elements
+  * More consistent treatment of top and bottom margins for typographic elements
 
 
 # 1.3.3

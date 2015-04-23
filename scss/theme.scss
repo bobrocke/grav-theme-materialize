@@ -77,7 +77,6 @@ a {
 }
 
 a.btn {
-	vertical-align: middle;
 	&:hover {
 		color: black;
 	}
@@ -193,7 +192,6 @@ span.badge.new::after {
 }
 
 .btn {
-	padding-top: 0.1rem;
 	background-color: $localPrimaryColor;
 	margin-bottom: 1rem;
 	&:hover {
@@ -201,13 +199,17 @@ span.badge.new::after {
 	}
 }
 
-.btn span {
-	position: relative;
-	top: -0.1rem;
+i.left {
+	margin-right: 0.5rem;
+}
+
+i.right {
+	margin-left: 0.5rem;
 }
 
 span.badge.new {
 	background-color: $localPrimaryColor;
+	letter-spacing: 1px;
 }
 
 .list-blog-header {
