@@ -140,16 +140,18 @@ li.disabled {
 	}
 }
 
-span {
-	&.tags {
-		float: right;
-	}
-	.badge {
-		float: none;
-		position: relative;
-		right: 0;
-		padding: 4px 6px 4px 6px;
-	}
+//span.header-tags {
+//	float: right;
+//}
+span.list-blog-date {
+	float: right;
+}
+
+span.badge {
+	float: none;
+	position: relative;
+	right: 0;
+	padding: 4px 6px 4px 6px;
 }
 
 span.badge.new::after {

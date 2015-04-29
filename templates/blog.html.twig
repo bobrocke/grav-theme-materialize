@@ -20,13 +20,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m8 l8 blog-main">
-				{% if config.plugins.breadcrumbs.enabled %}
-					{% include 'partials/breadcrumbs.html.twig' %}
-				{% endif %}
+					{% if config.plugins.breadcrumbs.enabled %}
+						{% include 'partials/breadcrumbs.html.twig' %}
+					{% endif %}
 
-				{% for child in collection %}
-					{% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
-				{% endfor %}
+					{% for child in collection %}
+						{% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
+					{% endfor %}
 				</div>
 
 				<div class="col s0 m4 l4 blog-sidebar">

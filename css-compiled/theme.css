@@ -70,10 +70,12 @@ nav {
 
 .nav-wrapper a:hover {
   color: black; }
+
 .nav-wrapper a i {
   position: relative;
   font-size: 1.3rem;
   right: -0.05em; }
+
 .nav-wrapper a span {
   position: relative;
   top: -0.15em; }
@@ -94,9 +96,10 @@ li.disabled {
   .tags a :hover {
     color: black; }
 
-span.tags {
+span.list-blog-date {
   float: right; }
-span .badge {
+
+span.badge {
   float: none;
   position: relative;
   right: 0;
@@ -168,18 +171,22 @@ span.badge.new {
 .previous {
   float: right; }
 
-.modular .features, .modular .callout {
+.modular .features,
+.modular .callout {
   margin-top: 3rem; }
-  .modular .features h2, .modular .callout h2 {
+  .modular .features h2,
+  .modular .callout h2 {
     margin-bottom: 0;
     font-weight: 500;
     font-size: 1.75rem;
     line-height: 2rem; }
-  .modular .features h3, .modular .callout h3 {
+  .modular .features h3,
+  .modular .callout h3 {
     margin-top: 0;
     font-size: 1.5rem;
     line-height: 1.75rem; }
-  .modular .features h4, .modular .callout h4 {
+  .modular .features h4,
+  .modular .callout h4 {
     font-size: 1.5rem; }
 
 .modular .callout h2 {
@@ -252,18 +259,25 @@ footer.page-footer {
 
 .collapsible-body h1, .collapsible-body h2, .collapsible-body h3, .collapsible-body h4, .collapsible-body h5, .collapsible-body h5, .collapsible-body h6 {
   padding-left: 2rem; }
+
 .collapsible-body iframe, .collapsible-body img {
   padding-left: 2rem; }
+
 .collapsible-body p:first-child {
   padding-top: 1.5em; }
+
 .collapsible-body p:last-child {
   padding-bottom: 1.5em; }
+
 .collapsible-body p {
   padding: 0 2rem 1em 2em; }
+
 .collapsible-body ul:first-child {
   padding-top: 1.5em; }
+
 .collapsible-body ul:last-child {
   padding-bottom: 1.5em; }
+
 .collapsible-body ul, .collapsible-body ol {
   padding: 0 2rem 1em 2em; }
 /*# sourceMappingURL=theme.css.map */

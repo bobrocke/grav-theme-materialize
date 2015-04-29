@@ -1,0 +1,20 @@
+{% extends 'partials/simplesearch_base.html.twig' %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m8 l8 blog-main">
+				<h4 class="search-header">Search Results</h4>
+
+				<h5>Query: <strong>{{ query }}</strong> found {{ search_results.count }} {{ 'result'|pluralize(search_results.count) }}</h5>
+				{% for page in search_results %}
+					{% include 'partials/simplesearch_item.html.twig' with {'page':page, 'truncate':true} %}
+				{% endfor %}
+			</div>
+			
+			<div class="col s0 m4 l4 blog-sidebar">
+				{% include 'partials/sidebar.html.twig' %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -18,7 +18,7 @@
 {% endif %}
 
 <div class="sidebar-content">
-	<h4>Some Text Widget</h4>
+	<h4>A Text Widget</h4>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 </div>
 
@@ -30,8 +30,8 @@
 {% endif %}
 
 {% if config.plugins.archives.enabled %}
+	{% set archives_show_count = false %}
 	<div class="sidebar-content">
-		{% set archives_show_count = false %}
 		<h4>Archives</h4>
 		{% include 'partials/archives.html.twig' %}
 	</div>
