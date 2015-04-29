@@ -22,14 +22,14 @@
 				{% endfor %}
 			</span>
 		{% endif %}
-
+		
 		{% if big_header %}
 			{{ page.media.images|first.cropResize(900,600).html('', '', 'responsive-img blog-header-image') }}
 		{% else %}
 			{{ page.media.images|first.cropZoom(900,300).html('', '', 'responsive-img blog-header-image') }}
 		{% endif %}
 	</div>
-
+	
 	<div class="list-blog-content">
 		{% if page.header.continue_link is sameas(false) %}
 			<p>{{ page.content }}</p>
@@ -45,22 +45,6 @@
 		{% else %}
 			<p>{{ page.content }}</p>
 			{% set show_prev_next = true %}
-		{% endif %}
-
-		{% if show_prev_next %}
-			<p>
-				{% if not page.isFirst %}
-					<a class="btn waves-effect waves-light" href="{{ page.nextSibling.url }}"><i class="mdi mdi-chevron-left left"></i>Next Post</a>
-				{% else %}
-					<a class="btn disabled"><i class="mdi mdi-chevron-left left"></i>Next Post</a>
-				{% endif %}
-
-				{% if not page.isLast %}
-					<a class="btn previous waves-effect waves-light" href="{{ page.prevSibling.url }}">Previous Post<i class="mdi mdi-chevron-right right"></i></a>
-				{% else %}
-					<a class="btn previous disabled">Previous Post<i class="mdi mdi-chevron-right right"></i></a>
-				{% endif %}
-			</p>
 		{% endif %}
 	</div>
 </section>
