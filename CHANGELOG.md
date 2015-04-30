@@ -1,3 +1,10 @@
+# 1.3.5
+## 05/01/2015
+
+1. [](#bugfix)
+  * Fixed layout of the search results pages
+
+
 # 1.3.4
 ## 04/23/2015
 
