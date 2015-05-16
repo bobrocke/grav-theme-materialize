@@ -5,7 +5,7 @@ use Grav\Common\Theme;
 
 class Materialize extends Theme
 {
-	// Materializer plugin will look for this class var to know it should load
+	// Materializer plugin will look for this class variable to know that it should load
 	public $load_materializer_plugin = true;
 
 	public static function getSubscribedEvents()
@@ -31,6 +31,5 @@ class Materialize extends Theme
 	{
 		$this->config->set('plugins.pagination.built_in_css', false);
 		$this->config->set('plugins.relatedpages.show_score', false);
-   }
-
+	}
 }
