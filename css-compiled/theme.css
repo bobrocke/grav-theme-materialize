@@ -28,16 +28,35 @@ h6 {
   line-height: 1.88rem;
   margin: 1.25rem 0 0 0; }
 
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
   margin-top: 0; }
 
-h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul {
+h1 + ul,
+h2 + ul,
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul {
   margin-top: 0; }
 
-h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
+h1 + ol,
+h2 + ol,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
   margin-top: 0; }
 
-p, ul, ol, pre, code {
+p,
+ul,
+ol,
+pre,
+code {
   margin-bottom: 0; }
 
 ul {
@@ -53,14 +72,14 @@ a.btn:hover {
 
 .tags a {
   display: inline-block;
-  padding: 0;
-  margin-bottom: .2rem; }
+  margin-bottom: .2rem;
+  padding: 0; }
   .tags a :hover {
     color: black; }
 
 .logo {
-  margin-top: 6px;
   height: 52px;
+  margin-top: 6px;
   width: 52px; }
   .logo path {
     fill: white; }
@@ -72,8 +91,8 @@ nav {
   color: black; }
 
 .nav-wrapper a i {
-  position: relative;
   font-size: 1.3rem;
+  position: relative;
   right: -0.05em; }
 
 .nav-wrapper a span {
@@ -91,8 +110,8 @@ li.disabled {
 
 .tags a {
   display: inline-block;
-  padding: 0;
-  margin-bottom: .2rem; }
+  margin-bottom: .2rem;
+  padding: 0; }
   .tags a :hover {
     color: black; }
 
@@ -101,12 +120,12 @@ span.list-blog-date {
 
 span.badge {
   float: none;
+  padding: 4px 6px 4px 6px;
   position: relative;
-  right: 0;
-  padding: 4px 6px 4px 6px; }
+  right: 0; }
 
 span.badge.new::after {
-  content: ""; }
+  content: ''; }
 
 .footer-copyright .container a {
   font-weight: 500; }
@@ -117,19 +136,19 @@ span.badge.new::after {
   background-color: #03A9F4;
   text-align: center; }
   .header h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
+    color: #FFFFFF;
     font-size: 4rem;
-    padding-top: 3rem;
-    color: #FFFFFF; }
-  .header h2 {
-    margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
+    margin-top: 0;
+    padding-top: 3rem;
+    text-align: center; }
+  .header h2 {
+    color: #FFFFFF;
     font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: 2rem;
-    color: #FFFFFF; }
+    text-align: center; }
 
 .breadcrumbs {
   margin-top: 1.5rem; }
@@ -157,14 +176,14 @@ span.badge.new {
   .list-blog-header h4 {
     margin-bottom: 0.5rem; }
   .list-blog-header img {
-    display: block;
-    margin-top: 1rem;
     border-radius: 0.25rem;
-    clear: both; }
+    clear: both;
+    display: block;
+    margin-top: 1rem; }
 
 .pagination {
-  text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
   .pagination li.active {
     background-color: #FF5722; }
 
@@ -176,15 +195,15 @@ span.badge.new {
   margin-top: 3rem; }
   .modular .features h2,
   .modular .callout h2 {
-    margin-bottom: 0;
-    font-weight: 500;
     font-size: 1.75rem;
-    line-height: 2rem; }
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 0; }
   .modular .features h3,
   .modular .callout h3 {
-    margin-top: 0;
     font-size: 1.5rem;
-    line-height: 1.75rem; }
+    line-height: 1.75rem;
+    margin-top: 0; }
   .modular .features h4,
   .modular .callout h4 {
     font-size: 1.5rem; }
@@ -203,27 +222,27 @@ span.badge.new {
 .features.big .feature {
   margin: 2rem 0; }
   .features.big .feature h4 {
-    text-align: left;
-    margin: 0; }
+    margin: 0;
+    text-align: left; }
   .features.big .feature i {
+    color: #FF5722;
     float: left;
-    font-size: 3rem;
-    color: #FF5722; }
+    font-size: 3rem; }
 
 .features.small .feature {
   margin-top: 2rem; }
   .features.small .feature h4 {
     font-size: 1.125rem; }
   .features.small .feature i {
-    font-size: 3rem;
-    color: #FF5722; }
+    color: #FF5722;
+    font-size: 3rem; }
 
 .features.small .feature-content h4 {
   margin-top: 0; }
 
 .feature-content p {
-  text-align: left;
-  margin: 0; }
+  margin: 0;
+  text-align: left; }
 
 .callout {
   background: #F0F0F0;
@@ -245,22 +264,34 @@ footer.page-footer {
 
 .collapsible-header {
   height: auto; }
-  .collapsible-header h1, .collapsible-header h2, .collapsible-header h3, .collapsible-header h4, .collapsible-header h5, .collapsible-header h6 {
+  .collapsible-header h1,
+  .collapsible-header h2,
+  .collapsible-header h3,
+  .collapsible-header h4,
+  .collapsible-header h5,
+  .collapsible-header h6 {
     display: table-cell;
-    vertical-align: top;
     margin: 0;
+    padding-bottom: 0.5em;
     padding-top: 0.5em;
-    padding-bottom: 0.5em; }
+    vertical-align: top; }
   .collapsible-header i {
-    width: auto;
-    line-height: inherit;
     font-size: inherit;
-    margin-right: 0.5em; }
+    line-height: inherit;
+    margin-right: 0.5em;
+    width: auto; }
 
-.collapsible-body h1, .collapsible-body h2, .collapsible-body h3, .collapsible-body h4, .collapsible-body h5, .collapsible-body h5, .collapsible-body h6 {
+.collapsible-body h1,
+.collapsible-body h2,
+.collapsible-body h3,
+.collapsible-body h4,
+.collapsible-body h5,
+.collapsible-body h5,
+.collapsible-body h6 {
   padding-left: 2rem; }
 
-.collapsible-body iframe, .collapsible-body img {
+.collapsible-body iframe,
+.collapsible-body img {
   padding-left: 2rem; }
 
 .collapsible-body p:first-child {
@@ -278,6 +309,7 @@ footer.page-footer {
 .collapsible-body ul:last-child {
   padding-bottom: 1.5em; }
 
-.collapsible-body ul, .collapsible-body ol {
+.collapsible-body ul,
+.collapsible-body ol {
   padding: 0 2rem 1em 2em; }
 /*# sourceMappingURL=theme.css.map */
