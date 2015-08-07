@@ -1,0 +1,77 @@
+{% embed 'partials/base.html.twig' %}
+	{% set base_url = page.url %}
+	{% set feed_url = base_url %}
+
+	{% if base_url == '/' %}
+		{% set base_url = '' %}
+	{% endif %}
+
+	{% if base_url == base_url_relative %}
+		{% set feed_url = base_url~'/'~page.slug %}
+	{% endif %}
+
+	{% block content %}
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m8 l8 blog-main">
+					<ul class="collapsible popout" data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header">
+								<h5><i class="mdi mdi-image-filter-drama"></i></h5>
+								<h5>First</h5>
+							</div>
+							<div class="collapsible-body">
+								<h6>Activity-Centered Design</h6>
+								<p>A specific form of user-centered design where the focus is on user activities and tasks rather than user characteristics.</p>
+								<ul>
+									<li><a href="http://bokardo.com/archives/activity-centered-design/" target="_blank" rel="nofollow" class="external-link no-image">Activity-Centered Design - Bokardo</a>
+									</li>
+									<li><a href="http://www.uie.com/articles/designing_web_applications_for_use/" target="_blank" rel="nofollow" class="external-link no-image">Designing Web Applications for Use</a></li>
+									<li><a href="http://www.peachpit.com/guides/content.aspx?g=webdesign&amp;seqNum=352" target="_blank" rel="nofollow" class="external-link no-image">Redefining User-Centered Design, Part 1</a></li>
+								</ul>
+
+								<h6>Agile UX</h6>
+								<p>A variation of the Agile methodology, which supports a more collaborative approach to various user experience design methods.</p>
+								<ul>
+									<li><a href="http://www.uxmatters.com/mt/archives/2012/04/agile-user-experience-design.php" target="_blank" rel="nofollow" class="external-link no-image">Agile User Experience Design</a></li>
+									<li><a href="http://boxesandarrows.com/bringing-user-centered-design-to-the-agile-environment/" target="_blank" rel="nofollow" class="external-link no-image">Bringing User Centered Design to the Agile Environment</a></li>
+									<li><a href="http://uxdesign.smashingmagazine.com/2012/11/06/design-spikes-fit-big-picture-ux-agile-development/" target="_blank" rel="nofollow" class="external-link no-image">Fitting Big-Picture UX Into Agile Development</a></li>
+									<li><a href="http://uxmag.com/articles/ux-and-agile-tying-the-knot" target="_blank" rel="nofollow" class="external-link no-image">UX and Agile: Tying the knot</a></li>
+								</ul>
+								<h6>Activity-Centered Design</h6>
+								<p>A specific form of user-centered design where the focus is on user activities and tasks rather than user characteristics.</p>
+								<p>A specific form of user-centered design where the focus is on user activities and tasks rather than user characteristics.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header">
+								<h5><i class="mdi mdi-map-marker"></i></h5>
+								<h5>This is a title for an accordion section that is really, really long and that causes wrapping problems.</h5>
+							</div>
+							<div class="collapsible-body">
+								<p>And this is the content of the body.</p>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header">
+								<h5><i class="mdi mdi-loupe"></i></h5>
+								<h5>Third</h5>
+							</div>
+							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+						</li>
+					</ul>
+
+					<div class="video-container">
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/VH26lrd6LSY?rel=0&showinfo=0"
+							frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col s0 m4 l4 blog-sidebar">
+					{% include 'partials/sidebar.html.twig' %}
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+{% endembed %}
