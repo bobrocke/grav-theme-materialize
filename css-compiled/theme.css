@@ -72,7 +72,7 @@ a.btn:hover {
 
 .tags a {
   display: inline-block;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   padding: 0; }
   .tags a :hover {
     color: black; }
@@ -89,12 +89,10 @@ nav {
 
 .nav-wrapper a:hover {
   color: black; }
-
 .nav-wrapper a i {
   font-size: 1.3rem;
   position: relative;
   right: -0.05em; }
-
 .nav-wrapper a span {
   position: relative;
   top: -0.15em; }
@@ -160,6 +158,13 @@ span.badge.new::after {
   margin-bottom: 1rem; }
   .btn:hover {
     background-color: #B3E5FC; }
+
+.btn i,
+.btn-large i,
+.btn-floating i,
+.btn-large i,
+.btn-flat i {
+  font-size: inherit; }
 
 i.left {
   margin-right: 0.5rem; }
@@ -261,7 +266,6 @@ footer.page-footer {
 @media only screen and (min-width: 993px) {
   .container {
     width: 90%; } }
-
 .collapsible-header {
   height: auto; }
   .collapsible-header h1,
@@ -289,27 +293,21 @@ footer.page-footer {
 .collapsible-body h5,
 .collapsible-body h6 {
   padding-left: 2rem; }
-
 .collapsible-body iframe,
 .collapsible-body img {
   padding-left: 2rem; }
-
 .collapsible-body p:first-child {
   padding-top: 1.5em; }
-
 .collapsible-body p:last-child {
   padding-bottom: 1.5em; }
-
 .collapsible-body p {
   padding: 0 2rem 1em 2em; }
-
 .collapsible-body ul:first-child {
   padding-top: 1.5em; }
-
 .collapsible-body ul:last-child {
   padding-bottom: 1.5em; }
-
 .collapsible-body ul,
 .collapsible-body ol {
   padding: 0 2rem 1em 2em; }
+
 /*# sourceMappingURL=theme.css.map */

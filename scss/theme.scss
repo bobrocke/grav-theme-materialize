@@ -104,7 +104,7 @@ a.btn {
 
 .tags a {
 	display: inline-block;
-	margin-bottom: .2rem;
+	margin-bottom: 0.2rem;
 	padding: 0;
 
 	:hover {
@@ -229,6 +229,14 @@ span.badge.new::after {
 	&:hover {
 		background-color: $local-light-primary-color;
 	}
+}
+
+.btn i,
+.btn-large i,
+.btn-floating i,
+.btn-large i,
+.btn-flat i {
+	font-size: inherit;
 }
 
 i.left {

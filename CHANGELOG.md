@@ -1,3 +1,9 @@
+# 1.3.6
+## 08/08/2015
+
+1. [](#bugfix)
+  * Fixed vertical alignment problems in buttons with icons
+
 # 1.3.5
 ## 05/01/2015
 
