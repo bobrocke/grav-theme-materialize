@@ -159,6 +159,13 @@ span.badge.new::after {
   .btn:hover {
     background-color: #B3E5FC; }
 
+.btn i,
+.btn-large i,
+.btn-floating i,
+.btn-large i,
+.btn-flat i {
+  font-size: inherit; }
+
 i.left {
   margin-right: 0.5rem; }
 
