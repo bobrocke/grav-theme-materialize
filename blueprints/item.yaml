@@ -9,47 +9,24 @@ form:
 
       fields:
         blog:
-          type: tab
-          title: Blog Item
+          header.date:
+            type: datetime
+            label: Date
 
-          fields:
-            summary:
-              type: section
-              title: Summary
-              underline: true
+          header.taxonomy.topic:
+            type: text
+            label: Topic
+            default: opinion
 
+          header.taxonomy.tag:
+            type: text
+            label: Tag
 
-            header.summary.enabled:
-              type: toggle
-              label: Summary
-              highlight: 1
-              options:
-                '': Global
-                1: Enabled
-                0: Disabled
+          header.username:
+            type: text
+            label: Author
 
-            header.summary.format:
-              type: select
-              toggleable: true
-              label: Format
-              classes: fancy
-              options:
-                'short': 'Use the first occurence of delimter or size'
-                'long': 'Summary delimiter will be ignored'
-
-            header.summary.size:
-              type: text
-              toggleable: true
-              label: Size
-              classes: large
-              placeholder: 300
-              validate:
-                type: int
-                min: 1
-
-            header.summary.delimiter:
-              type: text
-              toggleable: true
-              label: Summary delimiter
-              classes: large
-              placeholder: ===
+          header.blog_url:
+            type: text
+            label: Blog URL
+            default:
