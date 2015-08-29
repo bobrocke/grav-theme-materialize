@@ -2,6 +2,7 @@
 
 	<ul class="pagination">
 		{% if pagination.hasPrev %}
+			{{ dump(pagination.prevUrl) }}
 			<li class="waves-effect"><a href="{{ base_url }}{{ pagination.params }}{{ pagination.prevUrl }}"><i
 						class="mdi mdi-chevron-left"></i></a></li>
 		{% else %}
