@@ -25,7 +25,7 @@
 					{% endif %}
 
 					{% for child in collection %}
-						{% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
+						{% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
 					{% endfor %}
 				</div>
 
@@ -41,7 +41,7 @@
 			<div class="container">
 				<div class="row center-align">
 					<div class="col s12 m8 l8">
-						{% include 'partials/pagination.html.twig' with {'pagination':collection.params.pagination} %}
+						{% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
 					</div>
 				</div>
 			</div>
