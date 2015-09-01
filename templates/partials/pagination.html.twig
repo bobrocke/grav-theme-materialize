@@ -1,10 +1,8 @@
 {% if pagination|length > 1 %}
-
 	<ul class="pagination">
 		{% if pagination.hasPrev %}
-			{{ dump(pagination.prevUrl) }}
-			<li class="waves-effect"><a href="{{ base_url }}{{ pagination.params }}{{ pagination.prevUrl }}"><i
-						class="mdi mdi-chevron-left"></i></a></li>
+			{% set url = (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
+			<li class="waves-effect"><a href="{{ url }}"><i class="mdi mdi-chevron-left"></i></a></li>
 		{% else %}
 			<li class="disabled"><i class="mdi mdi-chevron-left"></i></li>
 		{% endif %}
@@ -13,18 +11,18 @@
 			{% if paginate.isCurrent %}
 					<li class="active">{{ paginate.number }}</li>
 			{% elseif paginate.isInDelta %}
-					<li class="waves-effect"><a href="{{ base_url }}{{ pagination.params }}{{ paginate.url }}">{{ paginate.number }}</a></li>
+				{% set url = (base_url ~ pagination.params ~ paginate.url)|replace({'//':'/'}) %}
+				<li class="waves-effect"><a href="{{ url }}">{{ paginate.number }}</a></li>
 			{% elseif paginate.isDeltaBorder %}
 					<li><span>&hellip;</span></li>
 			{% endif %}
 		{% endfor %}
 
 		{% if pagination.hasNext %}
-			<li class="waves-effect"><a href="{{ base_url }}{{ pagination.params }}{{ pagination.nextUrl }}"><i
-						class="mdi mdi-chevron-right"></i></a></li>
+			{% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
+			<li class="waves-effect"><a href="{{ url }}"><i class="mdi mdi-chevron-right"></i></a></li>
 		{% else %}
 			<li class="disabled"><i class="mdi mdi-chevron-right"></i></li>
 		{% endif %}
 	</ul>
-
 {% endif %}
