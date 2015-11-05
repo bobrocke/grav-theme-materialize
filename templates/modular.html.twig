@@ -1,11 +1,10 @@
-{% embed 'partials/base.html.twig' %}
-	{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+{% extends 'partials/base.html.twig' %}
+{% macro pageLinkName(text) %} {{ text|lower|replace({' ':'_'}) }} {% endmacro %}
 
-	{% block content %}
-		{{ page.content }}
-		{% for module in page.collection() %}
-			<div class="modular-anchor" id="{{ _self.pageLinkName(module.menu) }}"></div>
-			{{ module.content }}
-		{% endfor %}
-	{% endblock %}
-{% endembed %}
+{% block content %}
+	{{ page.content }}
+	{% for module in page.collection() %}
+		<div class="modular-anchor" id="{{ _self.pageLinkName(module.menu) }}"></div>
+		{{ module.content }}
+	{% endfor %}
+{% endblock %}
