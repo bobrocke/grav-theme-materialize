@@ -3,26 +3,52 @@
 	<head>
 
 		{% block head %}
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		{% include 'partials/metadata.html.twig' %}
+			{% include 'partials/metadata.html.twig' %}
 
-		<title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+			<title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
-		<link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
-		{% block stylesheets %}
-			{% do assets.add('theme://css-compiled/theme.css',98) %}
-			{% do assets.addCss('theme://css/custom.css',100) %}
-		{% endblock %}
-		{{ assets.css() }}
+			<link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
+			{% block stylesheets %}
+				{% do assets.add('theme://css-compiled/theme.css',98) %}
+				{% do assets.addCss('theme://css/custom.css',100) %}
+			{% endblock %}
+			{{ assets.css() }}
 
-		{% block javascripts %}
-			{% do assets.add('jquery', 101) %}
-		{% endblock %}
-		{{ assets.js() }}
+			{% block javascripts %}
+				{% do assets.add('jquery', 101) %}
+			{% endblock %}
+			{{ assets.js() }}
 
+			{% if site.production %}
+				<!-- Start of Woopra Analytics Code -->
+				<script>
+					!function () {
+						var a, b, c, d = window, e = document, f = arguments, g = "script", h = ["config", "track", "trackForm", "trackClick", "identify", "visit", "push", "call"], i = function () {
+							var a, b = this, c = function (a) {
+								b[a] = function () {
+									return b._e.push([a].concat(Array.prototype.slice.call(arguments, 0))), b
+								}
+							};
+							for (b._e = [], a = 0; a < h.length; a++)c(h[a])
+						};
+						for (d.__woo = d.__woo || {}, a = 0; a < f.length; a++)d.__woo[f[a]] = d[f[a]] = d[f[a]] || new i;
+						b = e.createElement(g), b.async = 1, b.src = "//static.woopra.com/js/w.js", c = e.getElementsByTagName(g)[0], c.parentNode.insertBefore(b, c)
+					}("woopra");
+
+					// configure tracker
+					woopra.config({
+						domain: "materialize.bobrockefeller.com"
+					});
+
+					// track pageview
+					woopra.track();
+				</script>
+				<!-- End of Woopra Analytics Code -->
+			{% endif %}
 		{% endblock head%}
 	</head>
 

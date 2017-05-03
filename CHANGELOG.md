@@ -1,3 +1,10 @@
+# 1.3.8
+## 11/14/2015
+
+1. [](#bugfix)
+  * Fixed blueprints to work with the Admin plug-n when creating new modular pages
+
+
 # 1.3.7
 ## 09/01/2015
 
