@@ -46,10 +46,10 @@ This command will check your Grav install to see if your Materialize theme is du
 
 ## Manual Update
 
-Manually updating Materialize is pretty simple. Here is what you will need to do to get this done:
+Manually updating Materialize is pretty simple. Here's how:
 
 * Delete the `your/site/user/themes/materialize` directory.
-* Downalod the new version of the Materialize theme from either [GitHub](https://github.com/getgrav/grav-theme-materialize) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
+* Download the new version of the Materialize theme from either [GitHub](https://github.com/getgrav/grav-theme-materialize) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
 * Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `materialize`.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
