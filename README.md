@@ -81,3 +81,5 @@ menu:
 ```
 
 The url fields is mandatory if the menu structure is used. The menu text is optional, allowing for an icon-only menu item. The icon field is also optional, but if present, refers to an icon in the [Design Icon Font](http://materialdesignicons.com).
+
+Changed from within the submodule.
